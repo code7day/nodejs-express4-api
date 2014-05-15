@@ -3,6 +3,13 @@ var staticPages = require('../app/controllers/static_pages'),
 
 module.exports.initialize = function(app) {
     app.get('/', staticPages.index);
+    
+    app.get('/users', staticPages.userIndex);
+
+
+
+
+
     app.get('/api/users', users.index);
     // app.get('/api/contacts/:id', contacts.getById);
     // app.post('/api/contacts', contacts.add);

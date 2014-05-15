@@ -5,6 +5,7 @@
     "modernizr": "*",
     "bootstrap-sass-official": "*",
     "normalize-css": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "backbone": "*"
   }
 }

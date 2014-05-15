@@ -1,4 +1,16 @@
 extends ../layout
   
 block content
-  h1 Users Index
+  h1 Users
+  div.page
+
+  script(type='text/template' id="user-list-template")  
+    h4 Users
+    ul
+      <% _.each(users, function(user){ %>
+      li 
+        <%= user.get('email') %> 
+      <% }); %>
+     
+block scripts
+  script(src="javascripts/user.js")

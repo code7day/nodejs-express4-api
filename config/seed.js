@@ -13,7 +13,7 @@ module.exports = {
           console.log('successfully inserted user: ' + user._id);
         });
       } else {
-        console.log('found ' + users.length + ' existing users!');
+        console.log('found ' + users.length + ' existing user(s)!');
       }
     });
   }
