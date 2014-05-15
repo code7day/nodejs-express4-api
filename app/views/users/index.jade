@@ -6,11 +6,20 @@ block content
 
   script(type='text/template' id="user-list-template")  
     h4 Users
+    a(href="#/new") New User
     ul
       <% _.each(users, function(user){ %>
       li 
         <%= user.get('email') %> 
       <% }); %>
+
+  script(type="text/template" id="edit-user-template")
+    form(class="edit-user-form")
+      legned New User
+
+      input(type="text" name="email")
+
+      input(type="submit")
      
 block scripts
   script(src="javascripts/user.js")

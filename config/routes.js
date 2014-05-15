@@ -11,6 +11,7 @@ module.exports.initialize = function(app) {
 
 
     app.get('/api/users', users.index);
+    app.post('/api/users', users.newUser);
     // app.get('/api/contacts/:id', contacts.getById);
     // app.post('/api/contacts', contacts.add);
     // // app.put('/api/contacts', contacts.update);
