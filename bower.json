@@ -1,0 +1,9 @@
+{
+  "name": "restful-api",
+  "version": "0.0.1",
+  "dependencies": {
+    "modernizr": "*",
+    "bootstrap-sass-official": "*",
+    "normalize-css": "*"
+  }
+}
