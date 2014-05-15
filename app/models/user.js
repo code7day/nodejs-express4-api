@@ -6,11 +6,9 @@ var UserSchema = new Schema({
   email: String
 });
 
-UserSchema.path('email').validate(function(email){
-  var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  return emailRegex.test(email.text);
-}, 'The e-mail field cannot be empty.');
+// UserSchema.path('email').validate(function(email){
+//   var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+//   return emailRegex.test(email.text);
+// }, 'The e-mail field cannot be empty.');
 
-module.exports = {
-  User: mongoose.model('User', UserSchema)
-}
+module.exports = mongoose.model('User', UserSchema);

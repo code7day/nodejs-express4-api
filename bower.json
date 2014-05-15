@@ -4,6 +4,7 @@
   "dependencies": {
     "modernizr": "*",
     "bootstrap-sass-official": "*",
-    "normalize-css": "*"
+    "normalize-css": "*",
+    "jquery": "*"
   }
 }

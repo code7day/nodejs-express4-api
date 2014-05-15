@@ -9,10 +9,16 @@ var express = require('express'),
     logger = require('morgan'),
     mongoose = require('mongoose'),
     configDB = require('./config/database'),
+    seeder = require('./config/seed'),
     app = express();
 
 // Initialize Database
 mongoose.connect(configDB.url);
+mongoose.connection.on('open', function() {
+  console.log("Connected to Mongoose...");
+
+  seeder.check();
+});
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'app/views'));

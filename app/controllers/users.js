@@ -1,9 +1,10 @@
-var model = require('../models/user');
+var user = require('../models/user');
 
 module.exports = {
   index: function(req, res){
-    model.User.find({}, function (err, data){
+    user.find({}, function (err, data){
       res.json(data);
+      console.log(data);
     })
   }
 }
