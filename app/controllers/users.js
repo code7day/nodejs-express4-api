@@ -16,5 +16,8 @@ module.exports = {
       }
     });
     return res.send(newUser);
+  },
+  editUser: function(req, res){
+    
   }
 }

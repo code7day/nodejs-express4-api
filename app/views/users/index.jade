@@ -11,9 +11,10 @@ block content
       <% _.each(users, function(user){ %>
       li 
         <%= user.get('email') %>
+        <%= user.get('_id') %>
       li 
 
-        a(href!="#/edit/<%= user.email %>") Edit User 
+        a(href="#/edit/<%= user.get.('email') %>") Edit Users
       <% }); %>
 
   script(type="text/template" id="edit-user-template")

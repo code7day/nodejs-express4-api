@@ -16,7 +16,6 @@ var express = require('express'),
 mongoose.connect(configDB.url);
 mongoose.connection.on('open', function() {
   console.log("Connected to Mongoose...");
-
   seeder.check();
 });
 
